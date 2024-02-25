@@ -1,11 +1,11 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem,Link, Button } from "@nextui-org/react";
-import { AcmeLogo } from "./icon";
-import { ThemeSwitcher } from "@/components/molecules/ThemeSwitcher";
+import { AcmeLogo } from "../icon/icon";
+import { ThemeSwitcher } from "@/components/molecules/theme-switcher";
 
 export const NavbarNext = () => {
     return (
-        <Navbar >
+        <Navbar>
             <NavbarBrand>
                  <p className="font-bold text-inherit text-xl">Proflie</p>
             </NavbarBrand>

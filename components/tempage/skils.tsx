@@ -1,9 +1,8 @@
 'use client'
 import { ProgrammingLanguages, CssFrameworks, Frontend, Database, Platforms } from '@/components/data/data';
 import { Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Avatar } from "@nextui-org/react";
-import { SkillsProps } from '@/components/type/typeTempage';
+import { SkillsProps } from '@/components/type/type-tempage';
 import { useTheme } from 'next-themes';
-import LogoNextjs from '../atom/logoNextjs';
 
 export const Skills = ({ className }: SkillsProps) => {
     const { theme, setTheme } = useTheme()
@@ -17,10 +16,11 @@ export const Skills = ({ className }: SkillsProps) => {
                     <p className='col-span-3'>Programming Languages Database</p>
                     <div className='col-span-3'><Divider /> </div>
 
-                    {ProgrammingLanguages.map((item: any) => {
+                    {ProgrammingLanguages.map((item,index) => {
                         return (
                             <div className='w-14 h-14 flex bg-gray-600	justify-center items-center  rounded-lg'
                                 style={{ transition: 'height 0.3s ease' }}
+                                key={index}
                             >  <Image
                                     alt="nextui logo"
                                     height={40}
@@ -40,10 +40,11 @@ export const Skills = ({ className }: SkillsProps) => {
                 <div className={`grid grid-cols-3 w-60 gap-4 border rounded-2xl p-4 justify-center dark:border-gray-600`}>
                     <p className='col-span-3'>Front-End JavaScript Libraries and Frameworks</p>
                     <div className='col-span-3'><Divider /> </div>
-                    {Frontend.map((item: any) => {
+                    {Frontend.map((item,index) => {
                         return (
                             <div className='w-14 h-14 flex bg-gray-600	justify-center items-center  rounded-lg shadow-inner'
                                 style={{ transition: 'height 0.3s ease' }}
+                                key={index}
                             >  <Image
                                     alt="nextui logo"
                                     height={40}
@@ -59,10 +60,11 @@ export const Skills = ({ className }: SkillsProps) => {
                 <div className='grid grid-cols-3 w-60 gap-4 border rounded-2xl p-4 justify-center dark:border-gray-600'>
                     <p className='col-span-3'>Database Management Systems and ORMs</p>
                     <div className='col-span-3'><Divider /> </div>
-                    {Database.map((item: any) => {
+                    {Database.map((item,index) => {
                         return (
                             <div className='w-14 h-14 flex bg-gray-600	justify-center items-center  rounded-lg'
                                 style={{ transition: 'height 0.3s ease' }}
+                                key={index}
                             >  <Image
                                     alt="nextui logo"
                                     height={40}
@@ -79,10 +81,11 @@ export const Skills = ({ className }: SkillsProps) => {
                 <div className='grid grid-cols-3 w-60 gap-4 border rounded-2xl p-4 justify-center dark:border-gray-600'>
                     <p className='col-span-3'>CSS Frameworks</p>
                     <div className='col-span-3'><Divider /> </div>
-                    {CssFrameworks.map((item: any) => {
+                    {CssFrameworks.map((item,index) => {
                         return (
                             <div className='w-14 h-14 flex bg-gray-600	justify-center items-center  rounded-lg'
                                 style={{ transition: 'height 0.3s ease' }}
+                                key={index}
                             >  <Image
                                     alt="nextui logo"
                                     height={40}
@@ -111,10 +114,11 @@ export const Skills = ({ className }: SkillsProps) => {
 
                         />
                     </div>
-                    {Platforms.map((item: any) => {
+                    {Platforms.map((item,index) => {
                         return (
                             <div className='w-14 h-14 flex bg-gray-600	justify-center items-center rounded-lg'
                                 style={{ transition: 'height 0.3s ease' }}
+                                key={index}
                             >  <Image
                                     alt="nextui logo"
                                     height={40}

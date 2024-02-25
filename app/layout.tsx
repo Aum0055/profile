@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
-import { Providers } from '@/components/tempage/providers'
+import '@/styles/globals.css'
+import { Providers } from '@/components/provider/providers'
 
 const inter = Inter({ subsets: ['latin'] })
 Providers
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='dark'>
+    <html lang="en" className='dark' suppressHydrationWarning>
       <body>
         <Providers>
           {children}
