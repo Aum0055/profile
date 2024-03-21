@@ -7,7 +7,7 @@ export default function AppLayout({
 }) {
     return (
         <section>
-            <NavbarNext />
+            {/* <NavbarNext /> */}
             {children}
         </section>)
 }
